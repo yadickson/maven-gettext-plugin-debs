@@ -1,1 +1,2 @@
 
+com.googlecode.gettext-commons gettext-maven-plugin s/.*/pom/ s/.*/debian/ * *
