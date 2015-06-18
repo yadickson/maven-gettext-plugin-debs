@@ -1,0 +1,5 @@
+
+junit junit * * * *
+org.apache.maven.plugins maven-changes-plugin * * * *
+org.apache.maven.plugins maven-eclipse-plugin * * * *
+org.apache.maven.plugins maven-surefire-plugin * * * *

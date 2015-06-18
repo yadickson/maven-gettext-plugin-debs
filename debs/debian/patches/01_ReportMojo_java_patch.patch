@@ -1,0 +1,31 @@
+--- maven-gettext-plugin-1.2.4/src/main/java/org/xnap/commons/maven/gettext/ReportMojo.java	2007-07-31 18:14:23.000000000 -0400
++++ maven-gettext-plugin-1.2.4~/src/main/java/org/xnap/commons/maven/gettext/ReportMojo.java	2015-06-18 15:19:15.611801855 -0430
+@@ -29,8 +29,8 @@
+ import org.apache.maven.project.MavenProject;
+ import org.apache.maven.reporting.AbstractMavenReport;
+ import org.apache.maven.reporting.MavenReportException;
+-import org.codehaus.doxia.sink.Sink;
+-import org.codehaus.doxia.site.renderer.SiteRenderer;
++import org.apache.maven.doxia.sink.Sink;
++import org.apache.maven.doxia.siterenderer.DefaultSiteRenderer;
+ import org.codehaus.plexus.util.DirectoryScanner;
+ import org.codehaus.plexus.util.cli.CommandLineException;
+ import org.codehaus.plexus.util.cli.CommandLineUtils;
+@@ -68,7 +68,7 @@
+      * @required
+      * @readonly
+      */
+-    private SiteRenderer siteRenderer;
++    private DefaultSiteRenderer siteRenderer;
+ 
+     /**
+      * PO directory.
+@@ -181,7 +181,7 @@
+ 		return project;
+ 	}
+ 
+-	protected SiteRenderer getSiteRenderer()
++	protected DefaultSiteRenderer getSiteRenderer()
+ 	{
+ 		return siteRenderer;
+ 	}

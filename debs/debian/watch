@@ -1,0 +1,4 @@
+version=3
+opts="uversionmangle=s/-(alpha|beta|rc)(-)?/~$1$2/" \
+  http://gettext-commons.googlecode.com/svn/maven2-plugins/tags/ \
+  (\d.*)/ debian debian/orig-tar.sh

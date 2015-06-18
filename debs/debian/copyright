@@ -1,0 +1,21 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Maven Gettext Plugin
+Source: http://gettext-commons.googlecode.com/svn/maven2-plugins-site/index.html
+
+Files: *
+Copyright: 2015, Tammo van Lessen
+License: Apache-2.0 or LGPL-2.1
+
+Files: debian/*
+Copyright: 2015, Yadickson Soto <yadickson@gmail.com>
+License: Apache-2.0
+
+License: Apache-2.0
+ On Debian systems, the full text of the Apache-2.0 license
+ can be found in the file '/usr/share/common-licenses/Apache-2.0'
+
+License: LGPL-2.1
+ On Debian systems, the full text of the LGPL-2.1 license
+ can be found in the file '/usr/share/common-licenses/LGPL-2.1'
+
+
