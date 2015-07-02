@@ -15,7 +15,6 @@ Build Debian Package for Maven 2 Gettext Commons
 
 **Tested**
 
-- Debian wheezy
 - Debian jessie
 
 [Release page](https://github.com/yadickson/maven-gettext-plugin-debs/releases)
