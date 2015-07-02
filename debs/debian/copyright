@@ -7,7 +7,7 @@ Copyright: 2015, Tammo van Lessen
            2005 by Steffen Pingel
            2006 Felix Berger
            2001-2005 The Apache Software Foundation.
-License: Apache-2.0 or LGPL-2.1
+License: Apache-2.0
 
 Files: debian/*
 Copyright: 2015, Yadickson Soto <yadickson@gmail.com>
@@ -16,10 +16,6 @@ License: GPL-3+
 License: Apache-2.0
  On Debian systems, the full text of the Apache-2.0 license
  can be found in the file '/usr/share/common-licenses/Apache-2.0'
-
-License: LGPL-2.1
- On Debian systems, the full text of the LGPL-2.1 license
- can be found in the file '/usr/share/common-licenses/LGPL-2.1'
 
 License: GPL-3+
  On Debian systems, the full text of the GPL-3 license

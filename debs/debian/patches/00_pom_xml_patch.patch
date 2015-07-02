@@ -1,5 +1,5 @@
 --- maven-gettext-plugin-1.2.4/pom.xml	2013-11-21 10:28:36.000000000 -0430
-+++ maven-gettext-plugin-1.2.4~/pom.xml	2015-06-18 15:32:20.455781788 -0430
++++ maven-gettext-plugin-1.2.4~/pom.xml	2015-07-02 17:34:12.593556177 -0430
 @@ -6,6 +6,9 @@
    <version>1.2.4</version>
    <name>Maven Gettext Plugin</name>
@@ -10,20 +10,56 @@
    <description>Generate messages templates and deploy messages bundles</description>
    <licenses>
      <license>
+@@ -70,12 +73,12 @@
+     <!-- <dependency>
+       <groupId>org.codehaus.plexus</groupId>
+       <artifactId>plexus-utils</artifactId>
+-	  <version>1.0.5</version>
++    <version>1.0.5</version>
+     </dependency> -->
+     <!-- <dependency>
+       <groupId>org.codehaus.plexus</groupId>
+       <artifactId>plexus-utils</artifactId>
+-	  <version>1.0.5</version>
++    <version>1.0.5</version>
+     </dependency> -->
+     <dependency>
+       <groupId>org.apache.maven.reporting</groupId>
 @@ -87,6 +90,16 @@
        <artifactId>maven-reporting-impl</artifactId>
        <version>2.0</version>
      </dependency>
 +    <dependency>
-+	<groupId>org.apache.maven.doxia</groupId>
-+	<artifactId>doxia-decoration-model</artifactId>
-+	<version>1.1.4</version>
++  <groupId>org.apache.maven.doxia</groupId>
++  <artifactId>doxia-decoration-model</artifactId>
++  <version>1.1.4</version>
 +    </dependency>
 +    <dependency>
-+	<groupId>org.apache.maven.doxia</groupId>
-+	<artifactId>doxia-site-renderer</artifactId>
-+	<version>1.1.4</version>
++  <groupId>org.apache.maven.doxia</groupId>
++  <artifactId>doxia-site-renderer</artifactId>
++  <version>1.1.4</version>
 +    </dependency>
    </dependencies>
    <scm>
      <connection>scm:svn:http://gettext-commons.googlecode.com/svn/maven2-plugins/tags/1.2.4</connection>
+@@ -117,6 +130,20 @@
+         <artifactId>maven-surefire-plugin</artifactId>
+         <version>2.14</version>
+       </plugin>
++      <plugin>
++        <groupId>org.apache.maven.plugins</groupId>
++        <artifactId>maven-jar-plugin</artifactId>
++        <configuration>
++          <archive>
++            <manifest>
++              <addClasspath>true</addClasspath>
++              <classpathLayoutType>custom</classpathLayoutType>
++              <customClasspathLayout>/usr/share/java/$${artifact.artifactId}$${dashClassifier?}.$${artifact.extension}</customClasspathLayout>
++            </manifest>
++          </archive>
++        </configuration>
++        <version>2.4</version>
++      </plugin>
+     </plugins>
+   </build>
+   <reporting>
