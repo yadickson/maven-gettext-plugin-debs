@@ -1,31 +1,22 @@
 # maven-gettext-plugin-debs
-Build Debian Package for Maven 2 Gettext Commons (v1.2.4)
+Build Debian Package for Maven 2 Gettext Commons
 
-**Instructions**
+**Build dependencies**
 
-Inside of the debs folder
-
-**Gets orig source code**
-
-```
-debian/rules get-orig-source
-```
-
-**Check dependencies**
-
-```
-dpkg-checkbuilddeps
-```
-
-**Build source package**
-
-```
-debuild -S -nc -uc -us
-```
+- debhelper (>= 9)
+- cdbs
+- default-jdk
+- maven-debian-helper (>= 1.5)
+- libmaven-plugin-tools-java
+- libdoxia-sitetools-java
+- libmaven-reporting-impl-java
+- libmaven2-core-java
+- libplexus-utils2-java
 
 **Tested**
 
-```
-Debian jessie
-```
+- Debian wheezy
+- Debian jessie
+
+[Release page](https://github.com/yadickson/maven-gettext-plugin-debs/releases)
 

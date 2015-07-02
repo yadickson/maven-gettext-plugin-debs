@@ -1,6 +1,12 @@
-maven-gettext-plugin (1.2.4-1) unstable; urgency=low
+maven-gettext-plugin (1.2.4-2) unstable; urgency=medium
 
   * New release
+
+ -- Yadickson Soto <yadickson@gmail.com>  Thu, 25 Jun 2015 23:33:10 -0430
+
+maven-gettext-plugin (1.2.4-1) unstable; urgency=low
+
+  * Init commit
 
  -- Yadickson Soto <yadickson@gmail.com>  Thu, 05 Jan 2012 18:25:14 -0430
 
