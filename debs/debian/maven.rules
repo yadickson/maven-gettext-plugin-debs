@@ -3,4 +3,3 @@ org.apache.maven.doxia doxia-decoration-model jar s/.*/debian/ * *
 org.apache.maven.doxia doxia-site-renderer jar s/.*/debian/ * *
 org.apache.maven.reporting maven-reporting-impl jar s/.*/debian/ * *
 org.codehaus.plexus plexus-utils jar s/.*/2.x/ * *
-s/com\.googlecode\.gettext-commons/org.xnap.commons/ s/gettext-maven-plugin/maven-gettext-plugin/ * * * *

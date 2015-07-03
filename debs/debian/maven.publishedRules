@@ -1,2 +1,1 @@
 
-s/com\.googlecode\.gettext-commons/org.xnap.commons/ s/gettext-maven-plugin/maven-gettext-plugin/ * * * *
